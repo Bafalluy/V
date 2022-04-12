@@ -1,0 +1,106 @@
+{
+  "@context" : {
+    "SolarSystem" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem"
+    },
+    "VisitorsAssociated" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated"
+    },
+    "Birds" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds"
+    },
+    "HumansResistance" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance"
+    },
+    "Friendship" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship",
+      "@type" : "@id"
+    },
+    "Cast" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast"
+    },
+    "Number" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Number",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "EntertainmentSeries" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries"
+    },
+    "Humans" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Eat" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat",
+      "@type" : "@id"
+    },
+    "FightAgainst" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst",
+      "@type" : "@id"
+    },
+    "SirioSystem" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem"
+    },
+    "Titled" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Scientists" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists"
+    },
+    "PlotSummary" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary"
+    },
+    "GoodsInEarth" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth"
+    },
+    "Awards" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards"
+    },
+    "Rodents" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents"
+    },
+    "EarthInhabitants" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants"
+    },
+    "Invaders" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders"
+    },
+    "Long" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Long",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Reptiles" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles"
+    },
+    "Releases" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases"
+    },
+    "Sun" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre"
+    },
+    "Planet4Inhabitants" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants"
+    },
+    "Sirio" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio"
+    },
+    "Chapters" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters"
+    },
+    "ResistanceAsociated" : {
+      "@id" : "http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated"
+    }
+  }
+}
