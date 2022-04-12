@@ -1,0 +1,420 @@
+@prefix : <http://www.semanticweb.org/victor/ontologies/2022/3/V#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/victor/ontologies/2022/3/V#> .
+
+<http://www.semanticweb.org/victor/ontologies/2022/3/V> rdf:type owl:Ontology ;
+                                                         rdfs:comment "Author: Víctor Bafalluy Subirà"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat
+:Eat rdf:type owl:ObjectProperty ,
+              owl:AsymmetricProperty ;
+     rdfs:domain :Reptiles ;
+     rdfs:range :Rodents ;
+     rdfs:label "Eat" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst
+:FightAgainst rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Invaders ;
+              rdfs:range :HumansResistance ;
+              owl:propertyDisjointWith :Friendship ;
+              rdfs:label "FightAgainst" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship
+:Friendship rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :HumansResistance ;
+            rdfs:range :ResistanceAsociated ;
+            rdfs:label "Friendship" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Long
+:Long rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Releases ;
+      rdfs:range xsd:boolean ;
+      rdfs:comment "Determines if the serie is categorized as long" ;
+      rdfs:label "Long" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Number
+:Number rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Releases ;
+        rdfs:range xsd:int ;
+        rdfs:comment "Relates at the number of chapters" ;
+        rdfs:label "Number" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled
+:Titled rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Chapters ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Title for each chapter" ;
+        rdfs:label "Titled" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards
+:Awards rdf:type owl:Class ;
+        rdfs:subClassOf :EntertainmentSeries ;
+        rdfs:comment "awards received or for which it has been nominated"@en ;
+        rdfs:label "Awards" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds
+:Birds rdf:type owl:Class ;
+       rdfs:subClassOf :EarthInhabitants ;
+       rdfs:comment "they serve as food for humans and visitors"@en ;
+       rdfs:label "Birds" ;
+       rdfs:seeAlso "https://dbpedia.org/page/Bird" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast
+:Cast rdf:type owl:Class ;
+      rdfs:subClassOf :EntertainmentSeries ;
+      rdfs:comment "performers appearing in the series"@en ;
+      rdfs:label "Cast" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters
+:Chapters rdf:type owl:Class ;
+          rdfs:subClassOf :Releases ;
+          rdfs:comment "chapters of each series"@en ;
+          rdfs:label "Chapter" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants
+:EarthInhabitants rdf:type owl:Class ;
+                  rdfs:subClassOf :SolarSystem ;
+                  rdfs:comment "inhabitants of the earth"@en ;
+                  rdfs:label "EarthInhabitants" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries
+:EntertainmentSeries rdf:type owl:Class ;
+                     rdfs:comment "series offered by television channels"@en ;
+                     rdfs:label "EntertainmentSeries" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:subClassOf :EntertainmentSeries ;
+       rdfs:comment """general theme of a serie that serves for its classification.
+
+It is common to classify series according to genres, that is, types of themes or environments within which the action takes place."""@en ;
+       rdfs:label "Genre" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth
+:GoodsInEarth rdf:type owl:Class ;
+              rdfs:subClassOf :SolarSystem ;
+              rdfs:comment "Benefits which invaders are really looking for" ;
+              rdfs:label "GoodsInEarth" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans
+:Humans rdf:type owl:Class ;
+        rdfs:subClassOf :EarthInhabitants ;
+        owl:disjointWith :Reptiles ;
+        rdfs:comment "Most technologically advanced species on the earth"@en ;
+        rdfs:label "Humans" ;
+        rdfs:seeAlso "https://dbpedia.org/page/Human" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance
+:HumansResistance rdf:type owl:Class ;
+                  rdfs:subClassOf :Humans ;
+                  owl:disjointWith :VisitorsAssociated ;
+                  rdfs:comment "Dissidents who fight against the invaders"@en ;
+                  rdfs:label "HumansResistance" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders
+:Invaders rdf:type owl:Class ;
+          rdfs:subClassOf :Reptiles ;
+          rdfs:comment "invasive species that wants to conquer the earth"@en ;
+          rdfs:label "Invaders" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants
+:Planet4Inhabitants rdf:type owl:Class ;
+                    rdfs:subClassOf :SirioSystem ;
+                    rdfs:comment "inhabitants of the fourth planet of Sirius"@en ;
+                    rdfs:label "Planet4Inhabitants" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary
+:PlotSummary rdf:type owl:Class ;
+             rdfs:subClassOf :Genre ;
+             rdfs:comment "Describe the synopsis of the development of the series"@en ;
+             rdfs:label "PlotSummary" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases
+:Releases rdf:type owl:Class ;
+          rdfs:subClassOf :EntertainmentSeries ;
+          rdfs:comment "seasons aired so far"@en ;
+          rdfs:label "Releases" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles
+:Reptiles rdf:type owl:Class ;
+          rdfs:subClassOf :Planet4Inhabitants ;
+          rdfs:comment "most technologically advanced species on the planet"@en ;
+          rdfs:label "Reptiles" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated
+:ResistanceAsociated rdf:type owl:Class ;
+                     rdfs:subClassOf :Reptiles ;
+                     rdfs:comment "elements of the invasive species that binds to human resistance"@en ;
+                     rdfs:label "ResistanceAsociated" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents
+:Rodents rdf:type owl:Class ;
+         rdfs:subClassOf :EarthInhabitants ;
+         rdfs:comment "they serve as food for visitors"@en ;
+         rdfs:label "Rodents" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists
+:Scientists rdf:type owl:Class ;
+            rdfs:subClassOf :Humans ;
+            rdfs:comment "Humans on planet earth, whom the invaders want to eliminate"@en ;
+            rdfs:label "Scientists" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio
+:Sirio rdf:type owl:Class ;
+       rdfs:subClassOf :PlotSummary ;
+       owl:disjointWith :Sun ;
+       rdfs:comment "Star of the galaxy"@en ;
+       rdfs:label "Sirio" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem
+:SirioSystem rdf:type owl:Class ;
+             rdfs:subClassOf :Sirio ;
+             rdfs:comment "set of planets orbiting the star Sirius"@en ;
+             rdfs:label "SirioSystem" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem
+:SolarSystem rdf:type owl:Class ;
+             rdfs:subClassOf :Sun ;
+             rdfs:comment "set of planets orbiting the star Sun"@en ;
+             rdfs:label "SolarSystem" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun
+:Sun rdf:type owl:Class ;
+     rdfs:subClassOf :PlotSummary ;
+     rdfs:comment "Star of the galaxy"@en ;
+     rdfs:label "Sun" ;
+     rdfs:seeAlso "https://dbpedia.org/page/Sun" .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated
+:VisitorsAssociated rdf:type owl:Class ;
+                    rdfs:subClassOf :Humans ;
+                    rdfs:comment "Rulers and high spheres who trust the invaders"@en ;
+                    rdfs:label "VisitorsAssociated" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Barbara
+:Barbara rdf:type owl:NamedIndividual ,
+                  :HumansResistance .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Brian
+:Brian rdf:type owl:NamedIndividual ,
+                :HumansResistance .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Diana
+:Diana rdf:type owl:NamedIndividual ,
+                :Invaders .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#John
+:John rdf:type owl:NamedIndividual ,
+               :VisitorsAssociated .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#JulietParrish
+:JulietParrish rdf:type owl:NamedIndividual ,
+                        :HumansResistance .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Lydia
+:Lydia rdf:type owl:NamedIndividual ,
+                :Invaders .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Martin
+:Martin rdf:type owl:NamedIndividual ,
+                 :Invaders .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#MikeDonovan
+:MikeDonovan rdf:type owl:NamedIndividual ,
+                      :HumansResistance .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#RobinMaxwell
+:RobinMaxwell rdf:type owl:NamedIndividual ,
+                       :Invaders .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Steven
+:Steven rdf:type owl:NamedIndividual ,
+                 :Scientists .
+
+
+###  http://www.semanticweb.org/victor/ontologies/2022/3/V#Willie
+:Willie rdf:type owl:NamedIndividual ,
+                 :ResistanceAsociated .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#n> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#resistance> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Releases ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Number ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#n> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 2 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :Long ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HumansResistance ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#resistance>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :FightAgainst ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#resistance>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :ResistanceAsociated ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#resistance>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Reptiles ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Invaders ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :Eat ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Rodents ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Humans ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> [ rdf:type owl:Class ;
+                                                                                                         owl:complementOf :Humans
+                                                                                                       ] ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
