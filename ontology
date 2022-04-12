@@ -127,6 +127,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants"/>
+        <rdfs:comment xml:lang="en">they serve as food for humans and visitors</rdfs:comment>
+        <rdfs:label>Birds</rdfs:label>
+        <rdfs:seeAlso>https://dbpedia.org/page/Bird</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast">
@@ -339,17 +350,6 @@ It is common to classify series according to genres, that is, types of themes or
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans"/>
         <rdfs:comment xml:lang="en">Rulers and high spheres who trust the invaders</rdfs:comment>
         <rdfs:label>VisitorsAssociated</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/victor/ontologies/2022/3/V#birds -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/victor/ontologies/2022/3/V#birds">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants"/>
-        <rdfs:comment xml:lang="en">they serve as food for humans and visitors</rdfs:comment>
-        <rdfs:label>Birds</rdfs:label>
-        <rdfs:seeAlso>https://dbpedia.org/page/Bird</rdfs:seeAlso>
     </owl:Class>
     
 
