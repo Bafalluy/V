@@ -1,0 +1,385 @@
+<http://www.semanticweb.org/victor/ontologies/2022/3/V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V> <http://www.w3.org/2000/01/rdf-schema#comment> "Author: Víctor Bafalluy Subirà"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat> <http://www.w3.org/2000/01/rdf-schema#label> "Eat" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> <http://www.w3.org/2000/01/rdf-schema#label> "FightAgainst" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Friendship> <http://www.w3.org/2000/01/rdf-schema#label> "Friendship" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Long
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines if the serie is categorized as long" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> <http://www.w3.org/2000/01/rdf-schema#label> "Long" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Number
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates at the number of chapters" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> <http://www.w3.org/2000/01/rdf-schema#label> "Number" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled> <http://www.w3.org/2000/01/rdf-schema#comment> "Title for each chapter" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Titled> <http://www.w3.org/2000/01/rdf-schema#label> "Titled" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards> <http://www.w3.org/2000/01/rdf-schema#comment> "awards received or for which it has been nominated"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Awards> <http://www.w3.org/2000/01/rdf-schema#label> "Awards" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds> <http://www.w3.org/2000/01/rdf-schema#comment> "they serve as food for humans and visitors"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds> <http://www.w3.org/2000/01/rdf-schema#label> "Birds" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Birds> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Bird" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "performers appearing in the series"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Cast> <http://www.w3.org/2000/01/rdf-schema#label> "Cast" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters> <http://www.w3.org/2000/01/rdf-schema#comment> "chapters of each series"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Chapters> <http://www.w3.org/2000/01/rdf-schema#label> "Chapter" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> <http://www.w3.org/2000/01/rdf-schema#comment> "inhabitants of the earth"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> <http://www.w3.org/2000/01/rdf-schema#label> "EarthInhabitants" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "series offered by television channels"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> <http://www.w3.org/2000/01/rdf-schema#label> "EntertainmentSeries" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "general theme of a serie that serves for its classification.\n\nIt is common to classify series according to genres, that is, types of themes or environments within which the action takes place."@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre> <http://www.w3.org/2000/01/rdf-schema#label> "Genre" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth> <http://www.w3.org/2000/01/rdf-schema#comment> "Benefits which invaders are really looking for" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#GoodsInEarth> <http://www.w3.org/2000/01/rdf-schema#label> "GoodsInEarth" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> <http://www.w3.org/2000/01/rdf-schema#comment> "Most technologically advanced species on the earth"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> <http://www.w3.org/2000/01/rdf-schema#label> "Humans" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Human" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Dissidents who fight against the invaders"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> <http://www.w3.org/2000/01/rdf-schema#label> "HumansResistance" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> <http://www.w3.org/2000/01/rdf-schema#comment> "invasive species that wants to conquer the earth"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> <http://www.w3.org/2000/01/rdf-schema#label> "Invaders" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants> <http://www.w3.org/2000/01/rdf-schema#comment> "inhabitants of the fourth planet of Sirius"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants> <http://www.w3.org/2000/01/rdf-schema#label> "Planet4Inhabitants" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Genre> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe the synopsis of the development of the series"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary> <http://www.w3.org/2000/01/rdf-schema#label> "PlotSummary" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EntertainmentSeries> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> <http://www.w3.org/2000/01/rdf-schema#comment> "seasons aired so far"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> <http://www.w3.org/2000/01/rdf-schema#label> "Releases" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Planet4Inhabitants> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> <http://www.w3.org/2000/01/rdf-schema#comment> "most technologically advanced species on the planet"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> <http://www.w3.org/2000/01/rdf-schema#label> "Reptiles" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> <http://www.w3.org/2000/01/rdf-schema#comment> "elements of the invasive species that binds to human resistance"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> <http://www.w3.org/2000/01/rdf-schema#label> "ResistanceAsociated" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#EarthInhabitants> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents> <http://www.w3.org/2000/01/rdf-schema#comment> "they serve as food for visitors"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents> <http://www.w3.org/2000/01/rdf-schema#label> "Rodents" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists> <http://www.w3.org/2000/01/rdf-schema#comment> "Humans on planet earth, whom the invaders want to eliminate"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists> <http://www.w3.org/2000/01/rdf-schema#label> "Scientists" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio> <http://www.w3.org/2000/01/rdf-schema#comment> "Star of the galaxy"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio> <http://www.w3.org/2000/01/rdf-schema#label> "Sirio" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Sirio> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "set of planets orbiting the star Sirius"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SirioSystem> <http://www.w3.org/2000/01/rdf-schema#label> "SirioSystem" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "set of planets orbiting the star Sun"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#SolarSystem> <http://www.w3.org/2000/01/rdf-schema#label> "SolarSystem" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#PlotSummary> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> <http://www.w3.org/2000/01/rdf-schema#comment> "Star of the galaxy"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> <http://www.w3.org/2000/01/rdf-schema#label> "Sun" .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Sun> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Sun" .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated> <http://www.w3.org/2000/01/rdf-schema#comment> "Rulers and high spheres who trust the invaders"@en .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated> <http://www.w3.org/2000/01/rdf-schema#label> "VisitorsAssociated" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Barbara
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Barbara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Barbara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Brian
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Brian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Brian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Diana
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Diana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Diana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#John
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#John> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#VisitorsAssociated> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#JulietParrish
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#JulietParrish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#JulietParrish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Lydia
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Lydia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Lydia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Martin
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Martin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Martin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#MikeDonovan
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#MikeDonovan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#MikeDonovan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#RobinMaxwell
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#RobinMaxwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#RobinMaxwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Steven
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Steven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Steven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Scientists> .
+# 
+# http://www.semanticweb.org/victor/ontologies/2022/3/V#Willie
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Willie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/victor/ontologies/2022/3/V#Willie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid1 <http://www.w3.org/2003/11/swrl#body> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2003/11/swrl#arguments> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Number> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Releases> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid1 <http://www.w3.org/2003/11/swrl#head> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid11 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Long> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Reptiles> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#resistance> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#ResistanceAsociated> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#resistance> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#FightAgainst> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#resistance> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#HumansResistance> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Invaders> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Rodents> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Eat> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#complementOf> <http://www.semanticweb.org/victor/ontologies/2022/3/V#Humans> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
